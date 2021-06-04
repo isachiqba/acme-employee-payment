@@ -69,7 +69,7 @@ All possible cases are taken into account when calculating an employee's salary:
 3) The employee's working time does not start on any specific shift, but ends on a valid shift.
 4) Work hours include multiple shifts.
 
-Use of periodic explanations for data analysis.
+Use of regular expressions for data analysis.
 Use of data class for data manipulation.
 
 >
