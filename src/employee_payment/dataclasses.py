@@ -13,7 +13,7 @@ class EmployeeShift:
 @dataclass
 class Employee:
     name: str
-    shifts: list[EmployeeShift]
+    shifts: list
 
 
 @dataclass
