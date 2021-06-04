@@ -1,0 +1,90 @@
+[build-system]
+requires      = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+force_single_line = true
+line_length       = 120
+
+[tool.poetry]
+authors     = ["Isachi Abreu Gil <isachiqba@gmail.com>"]
+classifiers = ["Private :: ioet"]
+description = ""
+name        = "employee_payment"
+readme      = "README.md"
+version     = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+
+[tool.poetry.dev-dependencies]
+dlint                       = "^0.11.0"
+flake8-bandit               = { git = "https://github.com/jjlorenzo/flake8-bandit" }
+flake8-bugbear              = "^21.3.2"
+flake8-builtins             = "^1.5.3"
+flake8-commas               = "^2.0.0"
+flake8-comprehensions       = "^3.4.0"
+flake8-fixme                = "^1.1.1"
+flake8-functions            = "^0.0.5"
+flake8-isort                = "^4.0.0"
+flake8-multiline-containers = "^0.0.18"
+flake8-mutable              = "^1.2.0"
+flake8-pytest               = "^1.3"
+flake8-quotes               = "^3.2.0"
+flake8-simplify             = "^0.14.0"
+ipdb                        = "^0.13.9"
+pyls-mypy                   = { git = "https://github.com/tomv564/pyls-mypy" }
+pytest                      = "^6.2.2"
+pytest-testmon              = "^1.1.0"
+pytest-watch                = "^4.2.0"
+python-language-server      = { version = "^0.36.2", extras = ["all"] }
+
+
+[tool.poetry.scripts]
+employee-payment = "employee_payment.__main__:entry_point"
+
+[tool.pytest.ini_options]
+cache_dir = ".venv/pytest_cache"
+testpaths = [ "tests" ]
+
+[tool.yapf]
+align_closing_bracket_with_visual_indent            = true
+allow_multiline_dictionary_keys                     = false
+allow_multiline_lambdas                             = true
+allow_split_before_default_or_named_assigns         = true
+allow_split_before_dict_value                       = false
+arithmetic_precedence_indication                    = true
+blank_line_before_module_docstring                  = true
+blank_line_before_nested_class_or_def               = true
+blank_lines_around_top_level_definition             = 2
+blank_lines_between_top_level_imports_and_variables = 2
+coalesce_brackets                                   = true
+column_limit                                        = 120
+continuation_align_style                            = "space"
+continuation_indent_width                           = 4
+dedent_closing_brackets                             = true
+disable_ending_comma_heuristic                      = false
+each_dict_entry_on_separate_line                    = true
+force_multiline_dict                                = true
+indent_blank_lines                                  = false
+indent_closing_brackets                             = false
+indent_dictionary_value                             = false
+indent_width                                        = 4
+join_multiple_lines                                 = false
+space_between_ending_comma_and_closing_bracket      = false
+space_inside_brackets                               = false
+spaces_around_default_or_named_assign               = false
+spaces_around_dict_delimiters                       = false
+spaces_around_list_delimiters                       = false
+spaces_around_power_operator                        = true
+spaces_around_subscript_colon                       = false
+spaces_around_tuple_delimiters                      = false
+spaces_before_comment                               = 2
+split_arguments_when_comma_terminated               = true
+split_before_dict_set_generator                     = false
+split_before_dot                                    = false
+split_before_expression_after_opening_paren         = true
+split_before_logical_operator                       = false
+split_before_named_assigns                          = false
+split_complex_comprehension                         = true
+use_tabs                                            = false

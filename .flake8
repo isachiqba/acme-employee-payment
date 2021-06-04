@@ -1,0 +1,9 @@
+[flake8]
+exclude =
+  .venv/*,
+ignore =
+    JS101,
+    JS102,
+    S101,
+inline-quotes = double
+max-line-length = 120
